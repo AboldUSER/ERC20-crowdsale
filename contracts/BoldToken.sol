@@ -1,11 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.7.4;
+pragma solidity >=0.6.0 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "./ERC20Mintable.sol";
 
-contract BTestToken is ERC20 {
-    constructor(uint256 initialSupply) public ERC20("BTest", "BOLDTEST") {
-        _mint(msg.sender, initialSupply);
+contract BTestToken is ERC20Mintable {
+
+    constructor() public ERC20("BTest", "BOLDTEST") ERC20Mintable() {
         _setupDecimals(0);
     }
 }
