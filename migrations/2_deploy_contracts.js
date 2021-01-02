@@ -1,6 +1,6 @@
-var BoldToken = artifacts.require("./BoldToken.sol");
-var BoldTokenCrowdsale = artifacts.require("./BoldTokenCrowdsale.sol");
-var BoldKycContract = artifacts.require("./KycContract.sol");
+var BoldToken = artifacts.require("BoldToken");
+var BoldTokenCrowdsale = artifacts.require("BoldTokenCrowdsale");
+var BoldKycContract = artifacts.require("KycContract");
 // require("dotenv").config({path: "../.env"});
 
 module.exports = async (deployer) => {
@@ -12,7 +12,7 @@ module.exports = async (deployer) => {
     await deployer.deploy(BoldTokenCrowdsale, 1, addr[0], BoldToken.address, BoldKycContract.address);
     
     let instance = await BoldToken.deployed();
-    await instance.addMinter(BoldTokenCrowdsale.address);
-    await instance.renounceMinter();
+    await instance.call().addMinter(BoldTokenCrowdsale.address);
+    await instance.call().renounceMinter();
 
 }

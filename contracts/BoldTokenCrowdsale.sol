@@ -8,7 +8,7 @@ import "./KycContract.sol";
 contract BoldTokenCrowdsale is MintedCrowdsale {
     KycContract kyc;
 
-    constructor(uint256 rate, address payable wallet, IERC20 token, KycContract _kyc) MintedCrowdsale() Crowdsale(rate, wallet, token) public {
+    constructor(uint256 _rate, address payable _wallet, IERC20 _token, KycContract _kyc) MintedCrowdsale() Crowdsale(_rate, _wallet, _token) {
         kyc = _kyc;
     }
 

@@ -6,7 +6,7 @@ import "./ERC20Mintable.sol";
 
 contract BTestToken is ERC20Mintable {
 
-    constructor() public ERC20("BTest", "BOLDTEST") ERC20Mintable() {
+    constructor() ERC20("BTest", "BOLDTEST") ERC20Mintable() {
         _setupDecimals(0);
     }
 }
