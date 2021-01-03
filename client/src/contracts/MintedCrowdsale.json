@@ -102,7 +102,7 @@
       "type": "receive"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"purchaser\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"TokensPurchased\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"}],\"name\":\"buyTokens\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"wallet\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"weiRaised\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"details\":\"Extension of Crowdsale contract whose tokens are minted in each purchase. Token ownership should be transferred to MintedCrowdsale for minting.\",\"kind\":\"dev\",\"methods\":{\"buyTokens(address)\":{\"details\":\"low level token purchase ***DO NOT OVERRIDE*** This function has a non-reentrancy guard, so it shouldn't be called by another `nonReentrant` function.\",\"params\":{\"beneficiary\":\"Recipient of the token purchase\"}},\"rate()\":{\"returns\":{\"_0\":\"the number of token units a buyer gets per wei.\"}},\"token()\":{\"returns\":{\"_0\":\"the token being sold.\"}},\"wallet()\":{\"returns\":{\"_0\":\"the address where funds are collected.\"}},\"weiRaised()\":{\"returns\":{\"_0\":\"the amount of wei raised.\"}}},\"title\":\"MintedCrowdsale\",\"version\":1},\"userdoc\":{\"events\":{\"TokensPurchased(address,address,uint256,uint256)\":{\"notice\":\"Event for token purchase logging\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol\":\"MintedCrowdsale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Crowdsale.sol\":{\"keccak256\":\"0x86e916dab9ca40b76a0d362e139727345c6be1a8c0913bacf69ccf4a8c8ca5bb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e1b2cda99d321daa9ef02a122f5587916262174871d66010cdda71249e1ec05\",\"dweb:/ipfs/QmYT18UPVeHPDynFzyk4rdfqikjtvMh2mWRxR1KvBobbPf\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/ERC20Mintable.sol\":{\"keccak256\":\"0xd1647d13811bc52055f26df70ba98065ea21de04cd9e7765953c202baa9188cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d83f09a93879bc2573df03d41d586136fe22669ee1cfd69f33d6eb7a57c0dcbc\",\"dweb:/ipfs/QmRLs5jHPtvPq8hn5W7oRtTacVuFb2VxkQoUEKpkwPsRtS\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol\":{\"keccak256\":\"0x8f4c9e32b4d320c5619fca0611ed13733e682c440a713b18f37b3ab082396f7c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3cce387924ab647c400568a84dec6b8705184d93cdedba18bd69ecb18c8a7c11\",\"dweb:/ipfs/QmQZEwbnUwGT28tNDmXVWS23Hd1kMvQFET8CnbRZN35ecB\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MinterRole.sol\":{\"keccak256\":\"0x77919d940dbc7088d82e1e4c42149d552868b2f556215ce6df989e37bdf4ae31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://44aea25f2f249a1860b5163bb7cda8321d8571f4b4dcdad8194eeb20b0fb4aaf\",\"dweb:/ipfs/QmUPXT81PSLPeFzKc46Br13EWQ8E7GN74VBfaT7oSAJxe3\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Roles.sol\":{\"keccak256\":\"0xc87ff250cd2425a88f75a3ea12aeae80378ec97c98b11f2f6bfc3f70c50f2272\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b26e9114b6deeb7310ffba2a85040f483932803eedaf85b022b0b2c248ea45ca\",\"dweb:/ipfs/QmdVEgAGeBs3UZ1sdxUqdWm9uqqscGTbNwMLacs77xgUyx\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0xbc7f2f08b805e299fa2d5e702051171f670ded2808044dfeb6fab4357f167138\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53f7f10bb120dca002788bc57a82cb2b17178312ed95c55a378a77f9a0803ee3\",\"dweb:/ipfs/QmYPMCJo9HA9WuvkTaCHJVGipyXNUr3skeEVSXj3QJgc8U\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x03e8ca0e478ad13a646ac950c1095903f565abf6914d9608f665b269a8239efe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f80fd7627b7524a434297757209861ccdc270473e6889b77a628e4aa0d6dcc76\",\"dweb:/ipfs/QmbbjLMnnLisxuJaPxoRJ8zSoQACk7dErtPKWWQ5Grkg66\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x2907222e728c3968e6a5ec5de8e997532bdc35df7ec6e014cb8884bfaf5546cb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://46fabe84b37a339d625fc9e0d0e0e63f9734dcf4e6289a920a9aae4aa42d9f93\",\"dweb:/ipfs/Qme2snxXwWvsvJ4QnJrdktj1aWBmLVDuzihUp2mVLDfmdv\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xb1b439fbc95b6285b8a37a7c25bbfe77644b4706d8405709bd575a0e6d67191b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c8fe1dd8140000fbbe4dd3899c15a20ea60d3ca1f9bff27ea21b9a2ff634e5a\",\"dweb:/ipfs/QmWgpKXT8syjcKdGtYUZjceghbSQmc9LVkzSYPxDwWrvnn\"]},\"@openzeppelin/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x718c551c5e27b8468b919c22086523e95b3bf1f72b31cdcd48ff1bf378b3665e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://54f4edf9b1f4d81f1380083413b9667e2fd8305f781fd0c25b43184b6f2d4a17\",\"dweb:/ipfs/QmZy5DB4kYHbTXAXCKTkjGkK7DGqv7tompd2pfhQZWxc8w\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x018efd677e0db6f060248f6656fd998d9c659e15d03d98b469ad28ac17ca9708\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://62ec243e005e808793e59bf6a0344fabd3c34b4ab788f295aa2c798ff175fe81\",\"dweb:/ipfs/QmQv5E4vEuguNuMPbRscMgaaKfhTc7th5pj6QVjGDo7x4c\"]},\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\":{\"keccak256\":\"0x67d78bdf587a283315b655b7b584ed783c8add81410f95654cb20d8c0e0cccef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce6f0c477b1bd7558d489eeeb7e5265465dc152f6c37e02dde1a1ea85b534483\",\"dweb:/ipfs/QmbvJAWUapDYM7MxdJyLwWmN2AnMmgSUERLfRpQ9aNvFgL\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"purchaser\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"TokensPurchased\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"beneficiary\",\"type\":\"address\"}],\"name\":\"buyTokens\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"rate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"contract IERC20\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"wallet\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"weiRaised\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"details\":\"Extension of Crowdsale contract whose tokens are minted in each purchase. Token ownership should be transferred to MintedCrowdsale for minting.\",\"kind\":\"dev\",\"methods\":{\"buyTokens(address)\":{\"details\":\"low level token purchase ***DO NOT OVERRIDE*** This function has a non-reentrancy guard, so it shouldn't be called by another `nonReentrant` function.\",\"params\":{\"beneficiary\":\"Recipient of the token purchase\"}},\"rate()\":{\"returns\":{\"_0\":\"the number of token units a buyer gets per wei.\"}},\"token()\":{\"returns\":{\"_0\":\"the token being sold.\"}},\"wallet()\":{\"returns\":{\"_0\":\"the address where funds are collected.\"}},\"weiRaised()\":{\"returns\":{\"_0\":\"the amount of wei raised.\"}}},\"title\":\"MintedCrowdsale\",\"version\":1},\"userdoc\":{\"events\":{\"TokensPurchased(address,address,uint256,uint256)\":{\"notice\":\"Event for token purchase logging\"}},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol\":\"MintedCrowdsale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Crowdsale.sol\":{\"keccak256\":\"0xc845420a85e3655c6337b52534afd81841086daee5e361870779f40a9e0c162f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b29b7f8cb5ace0b8e8d57ce54ed950bb686a740d99b0fa2faabb606430964178\",\"dweb:/ipfs/QmVaQbYzksQWTVxjyspL5hDtvXN3Q5qq8hdkX8vDSjtUr8\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/ERC20Mintable.sol\":{\"keccak256\":\"0x4907b7952a38bdf59c7ae566ad9ac0303317a7b2a64afa380b2cc974d3a79a6c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://17474c842af2b7f3f59c1fe85d9177a2a140ecbe9faf45a28317e41bff5aef1c\",\"dweb:/ipfs/QmTAw7QvKw8mBXDyXXZxUhjczvbQqXhMouVpJvPHVJ8Doe\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol\":{\"keccak256\":\"0x8f4c9e32b4d320c5619fca0611ed13733e682c440a713b18f37b3ab082396f7c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3cce387924ab647c400568a84dec6b8705184d93cdedba18bd69ecb18c8a7c11\",\"dweb:/ipfs/QmQZEwbnUwGT28tNDmXVWS23Hd1kMvQFET8CnbRZN35ecB\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MinterRole.sol\":{\"keccak256\":\"0xf2f81d8cf29e9d1da18d2474fda091ee1ba05e71a3b5d3ea43303b370ff4629a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d71015a575b470838ff6a2eb536f6e7cdcb624a700e0f3bb8b42045624d706d\",\"dweb:/ipfs/QmemXjFAb2RrQ1WWuuyjCMi6DsnnS1He3qJsr5mgWurvB8\"]},\"/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Roles.sol\":{\"keccak256\":\"0xc87ff250cd2425a88f75a3ea12aeae80378ec97c98b11f2f6bfc3f70c50f2272\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b26e9114b6deeb7310ffba2a85040f483932803eedaf85b022b0b2c248ea45ca\",\"dweb:/ipfs/QmdVEgAGeBs3UZ1sdxUqdWm9uqqscGTbNwMLacs77xgUyx\"]},\"@openzeppelin/contracts/GSN/Context.sol\":{\"keccak256\":\"0xbc7f2f08b805e299fa2d5e702051171f670ded2808044dfeb6fab4357f167138\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53f7f10bb120dca002788bc57a82cb2b17178312ed95c55a378a77f9a0803ee3\",\"dweb:/ipfs/QmYPMCJo9HA9WuvkTaCHJVGipyXNUr3skeEVSXj3QJgc8U\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x03e8ca0e478ad13a646ac950c1095903f565abf6914d9608f665b269a8239efe\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f80fd7627b7524a434297757209861ccdc270473e6889b77a628e4aa0d6dcc76\",\"dweb:/ipfs/QmbbjLMnnLisxuJaPxoRJ8zSoQACk7dErtPKWWQ5Grkg66\"]},\"@openzeppelin/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x495c20b4d6eff8a6da66bc31feaf67ae6ba647677b26c88ae90483c7893e1c0f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dbd3e159cb99a7519d2914c77b3e9cc44c916c794fdce6a44980e130c9f373bc\",\"dweb:/ipfs/QmW57bHQLN9zNeXdFGrh3Pop6nKJmUAHBijDekhiuGqM7Z\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xb1b439fbc95b6285b8a37a7c25bbfe77644b4706d8405709bd575a0e6d67191b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c8fe1dd8140000fbbe4dd3899c15a20ea60d3ca1f9bff27ea21b9a2ff634e5a\",\"dweb:/ipfs/QmWgpKXT8syjcKdGtYUZjceghbSQmc9LVkzSYPxDwWrvnn\"]},\"@openzeppelin/contracts/token/ERC20/SafeERC20.sol\":{\"keccak256\":\"0x718c551c5e27b8468b919c22086523e95b3bf1f72b31cdcd48ff1bf378b3665e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://54f4edf9b1f4d81f1380083413b9667e2fd8305f781fd0c25b43184b6f2d4a17\",\"dweb:/ipfs/QmZy5DB4kYHbTXAXCKTkjGkK7DGqv7tompd2pfhQZWxc8w\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x018efd677e0db6f060248f6656fd998d9c659e15d03d98b469ad28ac17ca9708\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://62ec243e005e808793e59bf6a0344fabd3c34b4ab788f295aa2c798ff175fe81\",\"dweb:/ipfs/QmQv5E4vEuguNuMPbRscMgaaKfhTc7th5pj6QVjGDo7x4c\"]},\"@openzeppelin/contracts/utils/ReentrancyGuard.sol\":{\"keccak256\":\"0x67d78bdf587a283315b655b7b584ed783c8add81410f95654cb20d8c0e0cccef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ce6f0c477b1bd7558d489eeeb7e5265465dc152f6c37e02dde1a1ea85b534483\",\"dweb:/ipfs/QmbvJAWUapDYM7MxdJyLwWmN2AnMmgSUERLfRpQ9aNvFgL\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -116,48 +116,48 @@
     "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol",
     "exportedSymbols": {
       "Address": [
-        2079
+        2075
       ],
       "Context": [
-        736
+        732
       ],
       "Crowdsale": [
-        370
+        368
       ],
       "ERC20": [
-        1544
+        1540
       ],
       "ERC20Mintable": [
-        400
+        398
       ],
       "IERC20": [
-        1622
+        1618
       ],
       "MintedCrowdsale": [
-        520
+        518
       ],
       "MinterRole": [
-        627
+        623
       ],
       "ReentrancyGuard": [
-        2119
+        2115
       ],
       "Roles": [
-        713
+        709
       ],
       "SafeERC20": [
-        1835
+        1831
       ],
       "SafeMath": [
-        1041
+        1037
       ]
     },
-    "id": 521,
+    "id": 519,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 489,
+        "id": 487,
         "literals": [
           "solidity",
           ">=",
@@ -173,10 +173,10 @@
       {
         "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Crowdsale.sol",
         "file": "./Crowdsale.sol",
-        "id": 490,
+        "id": 488,
         "nodeType": "ImportDirective",
-        "scope": 521,
-        "sourceUnit": 371,
+        "scope": 519,
+        "sourceUnit": 369,
         "src": "68:25:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -184,10 +184,10 @@
       {
         "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/ERC20Mintable.sol",
         "file": "./ERC20Mintable.sol",
-        "id": 491,
+        "id": 489,
         "nodeType": "ImportDirective",
-        "scope": 521,
-        "sourceUnit": 401,
+        "scope": 519,
+        "sourceUnit": 399,
         "src": "95:29:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -197,48 +197,48 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 493,
+              "id": 491,
               "name": "Crowdsale",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 370,
+              "referencedDeclaration": 368,
               "src": "359:9:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Crowdsale_$370",
+                "typeIdentifier": "t_contract$_Crowdsale_$368",
                 "typeString": "contract Crowdsale"
               }
             },
-            "id": 494,
+            "id": 492,
             "nodeType": "InheritanceSpecifier",
             "src": "359:9:6"
           }
         ],
         "contractDependencies": [
-          370,
-          2119
+          368,
+          2115
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 492,
+          "id": 490,
           "nodeType": "StructuredDocumentation",
           "src": "128:192:6",
           "text": " @title MintedCrowdsale\n @dev Extension of Crowdsale contract whose tokens are minted in each purchase.\n Token ownership should be transferred to MintedCrowdsale for minting."
         },
         "fullyImplemented": false,
-        "id": 520,
+        "id": 518,
         "linearizedBaseContracts": [
-          520,
-          370,
-          2119
+          518,
+          368,
+          2115
         ],
         "name": "MintedCrowdsale",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "baseFunctions": [
-              320
+              318
             ],
             "body": {
-              "id": 518,
+              "id": 516,
               "nodeType": "Block",
               "src": "643:240:6",
               "statements": [
@@ -248,11 +248,11 @@
                       {
                         "arguments": [
                           {
-                            "id": 512,
+                            "id": 510,
                             "name": "beneficiary",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 497,
+                            "referencedDeclaration": 495,
                             "src": "787:11:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -260,11 +260,11 @@
                             }
                           },
                           {
-                            "id": 513,
+                            "id": 511,
                             "name": "tokenAmount",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 499,
+                            "referencedDeclaration": 497,
                             "src": "800:11:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -291,18 +291,18 @@
                                     "arguments": [],
                                     "expression": {
                                       "argumentTypes": [],
-                                      "id": 507,
+                                      "id": 505,
                                       "name": "token",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 184,
+                                      "referencedDeclaration": 182,
                                       "src": "772:5:6",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IERC20_$1622_$",
+                                        "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IERC20_$1618_$",
                                         "typeString": "function () view returns (contract IERC20)"
                                       }
                                     },
-                                    "id": 508,
+                                    "id": 506,
                                     "isConstant": false,
                                     "isLValue": false,
                                     "isPure": false,
@@ -313,7 +313,7 @@
                                     "src": "772:7:6",
                                     "tryCall": false,
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_IERC20_$1622",
+                                      "typeIdentifier": "t_contract$_IERC20_$1618",
                                       "typeString": "contract IERC20"
                                     }
                                   }
@@ -321,11 +321,11 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_IERC20_$1622",
+                                      "typeIdentifier": "t_contract$_IERC20_$1618",
                                       "typeString": "contract IERC20"
                                     }
                                   ],
-                                  "id": 506,
+                                  "id": 504,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -337,14 +337,14 @@
                                     "typeString": "type(address)"
                                   },
                                   "typeName": {
-                                    "id": 505,
+                                    "id": 503,
                                     "name": "address",
                                     "nodeType": "ElementaryTypeName",
                                     "src": "764:7:6",
                                     "typeDescriptions": {}
                                   }
                                 },
-                                "id": 509,
+                                "id": 507,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -367,18 +367,18 @@
                                   "typeString": "address"
                                 }
                               ],
-                              "id": 504,
+                              "id": 502,
                               "name": "ERC20Mintable",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 400,
+                              "referencedDeclaration": 398,
                               "src": "750:13:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_ERC20Mintable_$400_$",
+                                "typeIdentifier": "t_type$_t_contract$_ERC20Mintable_$398_$",
                                 "typeString": "type(contract ERC20Mintable)"
                               }
                             },
-                            "id": 510,
+                            "id": 508,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -389,25 +389,25 @@
                             "src": "750:31:6",
                             "tryCall": false,
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_ERC20Mintable_$400",
+                              "typeIdentifier": "t_contract$_ERC20Mintable_$398",
                               "typeString": "contract ERC20Mintable"
                             }
                           },
-                          "id": 511,
+                          "id": 509,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "mint",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 399,
+                          "referencedDeclaration": 397,
                           "src": "750:36:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) external returns (bool)"
                           }
                         },
-                        "id": 514,
+                        "id": 512,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -424,7 +424,7 @@
                       },
                       {
                         "hexValue": "4d696e74656443726f776473616c653a206d696e74696e67206661696c6564",
-                        "id": 515,
+                        "id": 513,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -450,7 +450,7 @@
                           "typeString": "literal_string \"MintedCrowdsale: minting failed\""
                         }
                       ],
-                      "id": 503,
+                      "id": 501,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -464,7 +464,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 516,
+                    "id": 514,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -479,41 +479,41 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 517,
+                  "id": 515,
                   "nodeType": "ExpressionStatement",
                   "src": "728:147:6"
                 }
               ]
             },
             "documentation": {
-              "id": 495,
+              "id": 493,
               "nodeType": "StructuredDocumentation",
               "src": "376:177:6",
               "text": " @dev Overrides delivery by minting tokens upon purchase.\n @param beneficiary Token purchaser\n @param tokenAmount Number of tokens to be minted"
             },
-            "id": 519,
+            "id": 517,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_deliverTokens",
             "nodeType": "FunctionDefinition",
             "overrides": {
-              "id": 501,
+              "id": 499,
               "nodeType": "OverrideSpecifier",
               "overrides": [],
               "src": "634:8:6"
             },
             "parameters": {
-              "id": 500,
+              "id": 498,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 497,
+                  "id": 495,
                   "mutability": "mutable",
                   "name": "beneficiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 519,
+                  "scope": 517,
                   "src": "583:19:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -522,7 +522,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 496,
+                    "id": 494,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "583:7:6",
@@ -536,11 +536,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 499,
+                  "id": 497,
                   "mutability": "mutable",
                   "name": "tokenAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 519,
+                  "scope": 517,
                   "src": "604:19:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -549,7 +549,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 498,
+                    "id": 496,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "604:7:6",
@@ -564,19 +564,19 @@
               "src": "582:42:6"
             },
             "returnParameters": {
-              "id": 502,
+              "id": 500,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "643:0:6"
             },
-            "scope": 520,
+            "scope": 518,
             "src": "559:324:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 521,
+        "scope": 519,
         "src": "322:564:6"
       }
     ],
@@ -587,40 +587,40 @@
       "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/MintedCrowdsale.sol",
       "exportedSymbols": {
         "Address": [
-          2079
+          2075
         ],
         "Context": [
-          736
+          732
         ],
         "Crowdsale": [
-          370
+          368
         ],
         "ERC20": [
-          1544
+          1540
         ],
         "ERC20Mintable": [
-          400
+          398
         ],
         "IERC20": [
-          1622
+          1618
         ],
         "MintedCrowdsale": [
-          520
+          518
         ],
         "MinterRole": [
-          627
+          623
         ],
         "ReentrancyGuard": [
-          2119
+          2115
         ],
         "Roles": [
-          713
+          709
         ],
         "SafeERC20": [
-          1835
+          1831
         ],
         "SafeMath": [
-          1041
+          1037
         ]
       },
       "license": "MIT"
@@ -638,37 +638,37 @@
             ".0"
           ]
         },
-        "id": 489,
+        "id": 487,
         "name": "PragmaDirective",
         "src": "33:31:6"
       },
       {
         "attributes": {
-          "SourceUnit": 371,
+          "SourceUnit": 369,
           "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/Crowdsale.sol",
           "file": "./Crowdsale.sol",
-          "scope": 521,
+          "scope": 519,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 490,
+        "id": 488,
         "name": "ImportDirective",
         "src": "68:25:6"
       },
       {
         "attributes": {
-          "SourceUnit": 401,
+          "SourceUnit": 399,
           "absolutePath": "/C/Users/mster/OneDrive/Documents/DevTutorials/Udemy/Ethereum Developer 2020/asset-tokenization-example-mintable/ERC20-crowdsale/contracts/ERC20Mintable.sol",
           "file": "./ERC20Mintable.sol",
-          "scope": 521,
+          "scope": 519,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 491,
+        "id": 489,
         "name": "ImportDirective",
         "src": "95:29:6"
       },
@@ -676,25 +676,25 @@
         "attributes": {
           "abstract": true,
           "contractDependencies": [
-            370,
-            2119
+            368,
+            2115
           ],
           "contractKind": "contract",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            520,
-            370,
-            2119
+            518,
+            368,
+            2115
           ],
           "name": "MintedCrowdsale",
-          "scope": 521
+          "scope": 519
         },
         "children": [
           {
             "attributes": {
               "text": " @title MintedCrowdsale\n @dev Extension of Crowdsale contract whose tokens are minted in each purchase.\n Token ownership should be transferred to MintedCrowdsale for minting."
             },
-            "id": 492,
+            "id": 490,
             "name": "StructuredDocumentation",
             "src": "128:192:6"
           },
@@ -704,22 +704,22 @@
               {
                 "attributes": {
                   "name": "Crowdsale",
-                  "referencedDeclaration": 370,
+                  "referencedDeclaration": 368,
                   "type": "contract Crowdsale"
                 },
-                "id": 493,
+                "id": 491,
                 "name": "UserDefinedTypeName",
                 "src": "359:9:6"
               }
             ],
-            "id": 494,
+            "id": 492,
             "name": "InheritanceSpecifier",
             "src": "359:9:6"
           },
           {
             "attributes": {
               "baseFunctions": [
-                320
+                318
               ],
               "implemented": true,
               "isConstructor": false,
@@ -728,7 +728,7 @@
                 null
               ],
               "name": "_deliverTokens",
-              "scope": 520,
+              "scope": 518,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "internal"
@@ -738,7 +738,7 @@
                 "attributes": {
                   "text": " @dev Overrides delivery by minting tokens upon purchase.\n @param beneficiary Token purchaser\n @param tokenAmount Number of tokens to be minted"
                 },
-                "id": 495,
+                "id": 493,
                 "name": "StructuredDocumentation",
                 "src": "376:177:6"
               },
@@ -748,7 +748,7 @@
                     null
                   ]
                 },
-                "id": 501,
+                "id": 499,
                 "name": "OverrideSpecifier",
                 "src": "634:8:6"
               },
@@ -759,7 +759,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "beneficiary",
-                      "scope": 519,
+                      "scope": 517,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -772,12 +772,12 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 496,
+                        "id": 494,
                         "name": "ElementaryTypeName",
                         "src": "583:7:6"
                       }
                     ],
-                    "id": 497,
+                    "id": 495,
                     "name": "VariableDeclaration",
                     "src": "583:19:6"
                   },
@@ -786,7 +786,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "tokenAmount",
-                      "scope": 519,
+                      "scope": 517,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -798,17 +798,17 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 498,
+                        "id": 496,
                         "name": "ElementaryTypeName",
                         "src": "604:7:6"
                       }
                     ],
-                    "id": 499,
+                    "id": 497,
                     "name": "VariableDeclaration",
                     "src": "604:19:6"
                   }
                 ],
-                "id": 500,
+                "id": 498,
                 "name": "ParameterList",
                 "src": "582:42:6"
               },
@@ -819,7 +819,7 @@
                   ]
                 },
                 "children": [],
-                "id": 502,
+                "id": 500,
                 "name": "ParameterList",
                 "src": "643:0:6"
               },
@@ -862,7 +862,7 @@
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 503,
+                            "id": 501,
                             "name": "Identifier",
                             "src": "728:7:6"
                           },
@@ -898,7 +898,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "mint",
-                                  "referencedDeclaration": 399,
+                                  "referencedDeclaration": 397,
                                   "type": "function (address,uint256) external returns (bool)"
                                 },
                                 "children": [
@@ -928,11 +928,11 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 400,
+                                          "referencedDeclaration": 398,
                                           "type": "type(contract ERC20Mintable)",
                                           "value": "ERC20Mintable"
                                         },
-                                        "id": 504,
+                                        "id": 502,
                                         "name": "Identifier",
                                         "src": "750:13:6"
                                       },
@@ -955,7 +955,7 @@
                                             "attributes": {
                                               "argumentTypes": [
                                                 {
-                                                  "typeIdentifier": "t_contract$_IERC20_$1622",
+                                                  "typeIdentifier": "t_contract$_IERC20_$1618",
                                                   "typeString": "contract IERC20"
                                                 }
                                               ],
@@ -970,12 +970,12 @@
                                                 "attributes": {
                                                   "name": "address"
                                                 },
-                                                "id": 505,
+                                                "id": 503,
                                                 "name": "ElementaryTypeName",
                                                 "src": "764:7:6"
                                               }
                                             ],
-                                            "id": 506,
+                                            "id": 504,
                                             "name": "ElementaryTypeNameExpression",
                                             "src": "764:7:6"
                                           },
@@ -1005,31 +1005,31 @@
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 184,
+                                                  "referencedDeclaration": 182,
                                                   "type": "function () view returns (contract IERC20)",
                                                   "value": "token"
                                                 },
-                                                "id": 507,
+                                                "id": 505,
                                                 "name": "Identifier",
                                                 "src": "772:5:6"
                                               }
                                             ],
-                                            "id": 508,
+                                            "id": 506,
                                             "name": "FunctionCall",
                                             "src": "772:7:6"
                                           }
                                         ],
-                                        "id": 509,
+                                        "id": 507,
                                         "name": "FunctionCall",
                                         "src": "764:16:6"
                                       }
                                     ],
-                                    "id": 510,
+                                    "id": 508,
                                     "name": "FunctionCall",
                                     "src": "750:31:6"
                                   }
                                 ],
-                                "id": 511,
+                                "id": 509,
                                 "name": "MemberAccess",
                                 "src": "750:36:6"
                               },
@@ -1038,11 +1038,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 497,
+                                  "referencedDeclaration": 495,
                                   "type": "address",
                                   "value": "beneficiary"
                                 },
-                                "id": 512,
+                                "id": 510,
                                 "name": "Identifier",
                                 "src": "787:11:6"
                               },
@@ -1051,16 +1051,16 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 499,
+                                  "referencedDeclaration": 497,
                                   "type": "uint256",
                                   "value": "tokenAmount"
                                 },
-                                "id": 513,
+                                "id": 511,
                                 "name": "Identifier",
                                 "src": "800:11:6"
                               }
                             ],
-                            "id": 514,
+                            "id": 512,
                             "name": "FunctionCall",
                             "src": "750:62:6"
                           },
@@ -1075,37 +1075,37 @@
                               "type": "literal_string \"MintedCrowdsale: minting failed\"",
                               "value": "MintedCrowdsale: minting failed"
                             },
-                            "id": 515,
+                            "id": 513,
                             "name": "Literal",
                             "src": "831:33:6"
                           }
                         ],
-                        "id": 516,
+                        "id": 514,
                         "name": "FunctionCall",
                         "src": "728:147:6"
                       }
                     ],
-                    "id": 517,
+                    "id": 515,
                     "name": "ExpressionStatement",
                     "src": "728:147:6"
                   }
                 ],
-                "id": 518,
+                "id": 516,
                 "name": "Block",
                 "src": "643:240:6"
               }
             ],
-            "id": 519,
+            "id": 517,
             "name": "FunctionDefinition",
             "src": "559:324:6"
           }
         ],
-        "id": 520,
+        "id": 518,
         "name": "ContractDefinition",
         "src": "322:564:6"
       }
     ],
-    "id": 521,
+    "id": 519,
     "name": "SourceUnit",
     "src": "33:853:6"
   },
@@ -1115,7 +1115,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-02T23:23:42.121Z",
+  "updatedAt": "2021-01-03T05:21:55.586Z",
   "devdoc": {
     "details": "Extension of Crowdsale contract whose tokens are minted in each purchase. Token ownership should be transferred to MintedCrowdsale for minting.",
     "kind": "dev",

@@ -5,7 +5,7 @@ pragma solidity >=0.6.0 <0.8.0;
 import "@openzeppelin/contracts/GSN/Context.sol";
 import "./Roles.sol";
 
-abstract contract MinterRole is Context {
+contract MinterRole is Context {
     using Roles for Roles.Role;
 
     event MinterAdded(address indexed account);
@@ -13,7 +13,7 @@ abstract contract MinterRole is Context {
 
     Roles.Role private _minters;
 
-    constructor () internal {
+    constructor () {
         _addMinter(_msgSender());
     }
 
@@ -26,7 +26,7 @@ abstract contract MinterRole is Context {
         return _minters.has(account);
     }
 
-    function addMinter(address account) public onlyMinter {
+    function addMinter(address account) public {
         _addMinter(account);
     }
 

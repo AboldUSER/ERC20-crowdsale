@@ -7,7 +7,7 @@ import getWeb3 from "./getWeb3";
 import "./App.css";
 
 class App extends Component {
-  state = { loaded: false, kycAddress: "0xYourAddress", tokenSaleAddress: null, userTokens: 0, availableTokens: 0 };
+  state = { loaded: false, kycAddress: "0xYourAddress", tokenSaleAddress: null, userTokens: 0, totalTokens: 0 };
 
   componentDidMount = async () => {
     try {
@@ -38,7 +38,7 @@ class App extends Component {
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
       this.listenTokenTransfer();
-      this.setState( {loaded: true, tokenSaleAddress: BoldTokenCrowdsaleContract.networks[networkId].address}, this.updateUserAndAvailableTokens );
+      this.setState( {loaded: true, tokenSaleAddress: BoldTokenCrowdsaleContract.networks[networkId].address}, this.updateUserAndTotalTokens );
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -47,7 +47,6 @@ class App extends Component {
       console.error(error);
     }
   };
-
 
   render() {
     if (!this.state.loaded) {
@@ -62,10 +61,10 @@ class App extends Component {
         Address: <input type="text" name="kycAddress" value={this.state.kycAddress} onChange={this.handleInputChange}/>
         <button type="button" onClick={this.handleKycButtonClick}>Submit for KYC</button>
         <h2>Token Purchase</h2>
-        <p>Number of tokens available for purchase: {this.state.availableTokens}</p>
+        <p>Number of tokens currently minted: {this.state.totalTokens}</p>
         <p>If you want to buy tokens then send Wei to this address: {this.state.tokenSaleAddress}</p>
         <p>Number of tokens already in your account: {this.state.userTokens} </p>
-        <button type="button" onClick={this.handleBuyTokenButtonClick}>Buy more BOLD tokens</button>
+        <button type="button" onClick={this.handleBuyTokenButtonClick}>Buy one BOLD token</button>
       </div>
     );
   }
@@ -82,7 +81,7 @@ class App extends Component {
 
   handleKycButtonClick = async () => {
     await this.KycInstance.methods.setKycCompleted(this.state.kycAddress).send({from: this.accounts[0]});
-    alert("The following address has been whitelisted: " + this.state.kycAddress)
+    alert("The following address has been whitelisted: " + this.state.kycAddress);
   }
 
   handleBuyTokenButtonClick = async () => {
@@ -91,14 +90,14 @@ class App extends Component {
     console.log("ending");
   }
 
-  updateUserAndAvailableTokens = async () => {
-    let availableTokens = await this.boldTokenInstance.methods.balanceOf(this.state.tokenSaleAddress).call();
-    let userTokens = await this.boldTokenInstance.methods.balanceOf(this.accounts[0]).call();
-    this.setState({availableTokens: availableTokens, userTokens: userTokens});
+  updateUserAndTotalTokens = async () => {
+    let _totalTokens = await this.boldTokenInstance.methods.totalSupply().call();
+    let _userTokens = await this.boldTokenInstance.methods.balanceOf(this.accounts[0]).call();
+    this.setState({totalTokens: _totalTokens, userTokens: _userTokens});
   }
 
   listenTokenTransfer = ()=> {
-    this.boldTokenInstance.events.Transfer({to: this.accounts[0]}).on("data", this.updateUserAndAvailableTokens)
+    this.boldTokenInstance.events.Transfer({to: this.accounts[0]}).on("data", this.updateUserAndTotalTokens);
       }
 
 }
