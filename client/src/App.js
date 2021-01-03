@@ -97,7 +97,7 @@ class App extends Component {
   }
 
   listenTokenTransfer = ()=> {
-    this.boldTokenInstance.events.Transfer({to: this.accounts[0]}).on("data", this.updateUserAndTotalTokens);
+    this.boldTokenInstance.events.Transfer().on("data", this.updateUserAndTotalTokens);
       }
 
 }
